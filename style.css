@@ -705,17 +705,30 @@ footer {
 
 @media (max-width:420px) {
     header {
-        padding: 10px 50px;
         width: 100%;
+        padding: 10px 1px;
     }
 
     header > nav > a {
-        font-size: 12px;
+        display: none;
+    }
+
+    nav > a > span {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .logo > p {
+        width: 100%;
     }
 
     header > nav {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        display: flex;
+        align-items: center;
+        gap: 1px;
     }
 
     header > .logo > img {
@@ -731,23 +744,19 @@ footer {
    }
 
    .container {
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
    }
 
    .text > p {
-        font-size: 14px;
+        font-size: 18px;
         color: rgb(190, 190, 190);
-        line-height: 20px;
+        line-height: 25px;
         width: 100%;
+        margin-top: 30px;
         font-weight: 500;
    }
 
-   .text > h1 {
-    font-size: 12px;
-    color: red;
-   }
-   
    .tochka {
     display: block;
    }
@@ -756,12 +765,6 @@ footer {
     position: absolute;
     bottom: 6%;
    } 
-
-   .me {
-    position: absolute;
-    bottom: 30%;
-    right: 10%;
-   }
 
    .section2 {
     margin-top: 30px;
@@ -775,21 +778,13 @@ footer {
     font-size: 14px;
    }
 
-   .me > h2 {
-    font-size: 18px
+   .me {
+    display: none;
    }
 
    .jobs {
     flex-direction: column;
    } 
-
-   .section3 {
-    display: none;
-   }
-
-   footer {
-    display: none;
-   }
 
    .section3 {
     background-image:none;
@@ -803,26 +798,6 @@ footer {
     width: 100%;
    }
 
-   .section4 {
-    display: none;
-   }
-
-   .section5 {
-    display: none;
-   }
-
-   .section6 {
-    display: none;
-   }
-
-   .section7  {
-    display: none;
-   }
-
-   .section8 {
-    display: none;
-   }
-   
    .boxes4 {
     margin-top: 74px;
     width: 100%;
@@ -858,174 +833,3 @@ footer {
    }
 }
 
-@media (max-width:605px) {
-
-    header {
-        padding: 10px 12px ;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    iframe {
-        display: none;
-    }
-
-    nav > a {
-        margin: 12px;
-        font-size: 12px;
-    }
-    .logo > p {
-        display: none;
-    }
-
-    nav > a > span {
-        display: none;
-    }
-
-    .section {
-        width: 100%;
-        background-image: url(img/bckmobile.jpg);
-        background-size: cover;
-        height: 100vh;
-        position: relative;
-    }
-
-    .text > p {
-        font-size: 22px;
-        position: absolute;
-        font-weight: 500;
-        width: 100%;
-        bottom: 30%;
-    }
-
-    .text > h1 {
-        font-size: 60px;
-    }
-    
-    .me {
-        display: none;
-    }
-
-    .info {
-        bottom: 13%;
-        position: absolute;
-    }
-
-    .jobs {
-        flex-direction: column;
-    }
-
-    .box1 {
-        width: 100%;
-    }
-
-    .organish > p {
-        width: 50%;
-    }
-
-    .section2 {
-        height:150vh;
-        padding: 10px;
-    }
-
-    .boxes4 {
-        margin-top: 80px;
-        position: relative;
-    }
-
-    .box5 {
-        display: none;
-    }
-
-    .box6 {
-        position: absolute;
-        right: 20%;
-    }
-
-    .section3 {
-        height: max-content;
-        padding: 13px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .main {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .case {
-        width: 100%;
-    }
-
-    .case > img {
-        display: none;
-    }
-
-    .section4 {
-        height:max-content;
-    }
-
-    .shells {
-        flex-direction: column;
-    }
-
-    .shell {
-        width: 100%;
-        display: flex;
-    }
-
-    .shell > p {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .section5 {
-        height: max-content;
-    }
-
-    .section5 > img {
-        width: 100%;
-    }
-
-    .boxes1 {
-        margin: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.304);
-        border-radius: 20px;
-        padding: 7px;
-    }
-
-    .box2 {
-        display: none;
-    }
-
-    .section7 {
-        width: 100%;
-    }
-
-    .right {
-        display: none;
-    }
-    
-    .overall2 {
-        flex-direction: column;
-    }
-
-    .left1 {
-        width: 100%;
-    }
-
-    .right1 {
-        display: none;
-    }
-
-    .social > nav > a {
-        display: none;
-    }
-
-    .overall3 {
-        justify-content: space-around;
-    }
-}
