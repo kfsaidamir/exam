@@ -710,7 +710,12 @@ footer {
     }
 
     header > nav > a {
-        display: none;
+        font-size: 12px;
+    }
+
+    header > nav {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
     header > .logo > img {
@@ -719,7 +724,7 @@ footer {
 
    .section {
         width: 100%;
-        min-height: 120vh;
+        min-height: 80vh;
         background-image: url(img/bckmobile.jpg);
         background-size: cover;
         position: relative;
@@ -738,6 +743,11 @@ footer {
         font-weight: 500;
    }
 
+   .text > h1 {
+    font-size: 12px;
+    color: red;
+   }
+   
    .tochka {
     display: block;
    }
@@ -846,6 +856,176 @@ footer {
    .text2 > p {
     width: 90%;
    }
+}
 
+@media (max-width:605px) {
 
+    header {
+        padding: 10px 12px ;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    nav > a {
+        margin: 12px;
+        font-size: 12px;
+    }
+    .logo > p {
+        display: none;
+    }
+
+    nav > a > span {
+        display: none;
+    }
+
+    .section {
+        width: 100%;
+        background-image: url(img/bckmobile.jpg);
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+
+    .text > p {
+        font-size: 22px;
+        position: absolute;
+        font-weight: 500;
+        width: 100%;
+        bottom: 30%;
+    }
+
+    .text > h1 {
+        font-size: 60px;
+    }
+    
+    .me {
+        display: none;
+    }
+
+    .info {
+        bottom: 13%;
+        position: absolute;
+    }
+
+    .jobs {
+        flex-direction: column;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .organish > p {
+        width: 50%;
+    }
+
+    .section2 {
+        height:150vh;
+        padding: 10px;
+    }
+
+    .boxes4 {
+        margin-top: 80px;
+        position: relative;
+    }
+
+    .box5 {
+        display: none;
+    }
+
+    .box6 {
+        position: absolute;
+        right: 20%;
+    }
+
+    .section3 {
+        height: max-content;
+        padding: 13px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .case {
+        width: 100%;
+    }
+
+    .case > img {
+        display: none;
+    }
+
+    .section4 {
+        height:max-content;
+    }
+
+    .shells {
+        flex-direction: column;
+    }
+
+    .shell {
+        width: 100%;
+        display: flex;
+    }
+
+    .shell > p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .section5 {
+        height: max-content;
+    }
+
+    .section5 > img {
+        width: 100%;
+    }
+
+    .boxes1 {
+        margin: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.304);
+        border-radius: 20px;
+        padding: 7px;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .section7 {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+    
+    .overall2 {
+        flex-direction: column;
+    }
+
+    .left1 {
+        width: 100%;
+    }
+
+    .right1 {
+        display: none;
+    }
+
+    .social > nav > a {
+        display: none;
+    }
+
+    .overall3 {
+        justify-content: space-around;
+    }
 }
