@@ -703,25 +703,13 @@ footer {
 }
 
 
-@media (max-width:605px) {
-
+@media (max-width:420px) {
     header {
-        padding: 10px 12px ;
         width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        padding: 2px 1px;
     }
 
-    iframe {
-        display: none;
-    }
-
-    nav > a {
-        margin: 12px;
-        font-size: 12px;
-    }
-    .logo > p {
+    header > nav > a {
         display: none;
     }
 
@@ -729,148 +717,240 @@ footer {
         display: none;
     }
 
-    .section {
+    .logo > p {
         width: 100%;
+    }
+
+    header > nav {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+    }
+
+    header > .logo > img {
+        width: 110px;
+    }
+
+   .section {
+        width: 100%;
+        min-height: 80vh;
         background-image: url(img/bckmobile.jpg);
         background-size: cover;
-        height: 100vh;
         position: relative;
-    }
+   }
 
-    .text > p {
-        font-size: 22px;
-        position: absolute;
-        font-weight: 500;
-        width: 100%;
-        bottom: 30%;
-    }
+   .container {
+    width: 96%;
+    margin: 0 auto;
+   }
 
-    .text > h1 {
-        font-size: 60px;
-    }
-    
-    .me {
-        display: none;
-    }
-
-    .info {
-        bottom: 13%;
-        position: absolute;
-    }
-
-    .jobs {
-        flex-direction: column;
-    }
-
-    .box1 {
-        width: 100%;
-    }
-
-    .organish > p {
-        width: 50%;
-    }
-
-    .section2 {
-        height:150vh;
-        padding: 10px;
-    }
-
-    .boxes4 {
-        margin-top: 80px;
-        position: relative;
-    }
-
-    .box5 {
-        display: none;
-    }
-
-    .box6 {
-        position: absolute;
-        right: 20%;
-    }
-
-    .section3 {
-        height: max-content;
-        padding: 13px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .main {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .case {
-        width: 100%;
-    }
-
-    .case > img {
-        display: none;
-    }
-
-    .section4 {
-        height:max-content;
-    }
-
-    .shells {
-        flex-direction: column;
-    }
-
-    .shell {
-        width: 100%;
-        display: flex;
-    }
-
-    .shell > p {
-        width: 90%;
+   .text > p {
         font-size: 18px;
-    }
-
-    .section5 {
-        height: max-content;
-    }
-
-    .section5 > img {
+        color: rgb(190, 190, 190);
+        line-height: 25px;
         width: 100%;
-    }
+        margin-top: 30px;
+        font-weight: 500;
+   }
 
-    .boxes1 {
-        margin: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.304);
-        border-radius: 20px;
-        padding: 7px;
-    }
+   .tochka {
+    display: block;
+   }
 
-    .box2 {
-        display: none;
-    }
+   .info {
+    position: absolute;
+    bottom: 6%;
+   } 
 
-    .section7 {
-        width: 100%;
-    }
+   .section2 {
+    margin-top: 30px;
+   }
 
-    .right {
-        display: none;
-    }
-    
-    .overall2 {
-        flex-direction: column;
-    }
+   .box1 {
+    width: 100%;
+   }
 
-    .left1 {
-        width: 100%;
-    }
+   .organish > p {
+    font-size: 14px;
+   }
 
-    .right1 {
-        display: none;
-    }
+   .me {
+    display: none;
+   }
 
-    .social > nav > a {
-        display: none;
-    }
+   .jobs {
+    flex-direction: column;
+   } 
 
-    .overall3 {
-        justify-content: space-around;
-    }
+   .section3 {
+    background-image:none;
+   }
+
+   .kurs {
+    flex-direction: column;
+   }
+
+   iframe {
+    width: 100%;
+   }
+
+   .boxes4 {
+    margin-top: 74px;
+    width: 100%;
+    position: relative;
+   }
+
+   .box4 {
+    position: absolute;
+   }
+
+   .box5 {
+    position: absolute;
+   }
+
+   .box6 {
+    left: 10%;
+    z-index: 99;
+    position: absolute;
+   }
+
+   .box7 {
+    right: 10%;
+    position: absolute;
+   }
+
+   .text2 > h1 {
+    font-size: 30px;
+    width: 100%;
+   }
+
+   .text2 > p {
+    width: 90%;
+   }
+
+   .section2 {
+    height: max-content;
+    padding: 70px 0px;
+   }
+
+   .section3 {
+    background-image: url(img/back2.png);
+    height: max-content;
+    background-size: cover;
+    padding: 20px;
+    background-position: center;
+   }
+
+   .main {
+    flex-direction: column;
+   }
+ 
+   .case  {
+    width: 100%;
+   }
+
+   .case > img {
+    display: none;
+   }
+
+   .section4 {
+    height:max-content;
+   }
+
+   .shells {
+    flex-direction: column;
+   }
+
+   .shell {
+    width: 100%;
+   }
+
+   .shell > img {
+    display: none;
+   }
+
+   .section5 {
+    height: 55vh;
+   }
+
+   .section5 > img {
+    width: 100%;
+   }
+
+   .section5 > h1 {
+    font-size: 26px;
+   }
+
+   .box2 > img {
+    display: none;
+   }
+
+   .boxes1 {
+    width: 100%;
+   }
+
+   .comments {
+    gap: 30px;
+   }
+
+   .section8 {
+    height: max-content;
+   }
+
+   .right > img {
+    display: none;
+   }
+
+   .right1 > img {
+    display:none;
+   }
+
+   .left1 {
+    padding: 5px 20px ; 
+    width: 100%;
+   }
+
+   .left1 > h1 {
+    font-size: 30px;
+   }
+
+   .dizayner {
+    padding: 20px;
+    width: 100%;
+   }
+
+   footer {
+    width: 100%;
+   }
+
+   footer > nav {
+    margin: 30px;
+   }
+
+   .social > nav > a {
+    font-size: 13px;
+    margin: 20px;
+   }
+
+   .footer2 {
+    padding: 10px;
+   }
+
+   .i > i {
+    display: none;
+   }
+
+   .logo3 {
+    display: none;
+   }
+
+   .kirish {
+    display: none;
+   }
+
+   .section6 {
+    display: none;
+   }
+
 }
+
