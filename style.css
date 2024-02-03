@@ -703,13 +703,25 @@ footer {
 }
 
 
-@media (max-width:420px) {
+@media (max-width:605px) {
+
     header {
+        padding: 10px 12px ;
         width: 100%;
-        padding: 2px 1px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
-    header > nav > a {
+    iframe {
+        display: none;
+    }
+
+    nav > a {
+        margin: 12px;
+        font-size: 12px;
+    }
+    .logo > p {
         display: none;
     }
 
@@ -717,240 +729,148 @@ footer {
         display: none;
     }
 
-    .logo > p {
+    .section {
         width: 100%;
-    }
-
-    header > nav {
-        display: flex;
-        align-items: center;
-        gap: 1px;
-    }
-
-    header > .logo > img {
-        width: 110px;
-    }
-
-   .section {
-        width: 100%;
-        min-height: 80vh;
         background-image: url(img/bckmobile.jpg);
         background-size: cover;
+        height: 100vh;
         position: relative;
-   }
+    }
 
-   .container {
-    width: 96%;
-    margin: 0 auto;
-   }
-
-   .text > p {
-        font-size: 18px;
-        color: rgb(190, 190, 190);
-        line-height: 25px;
-        width: 100%;
-        margin-top: 30px;
+    .text > p {
+        font-size: 22px;
+        position: absolute;
         font-weight: 500;
-   }
+        width: 100%;
+        bottom: 30%;
+    }
 
-   .tochka {
-    display: block;
-   }
+    .text > h1 {
+        font-size: 60px;
+    }
+    
+    .me {
+        display: none;
+    }
 
-   .info {
-    position: absolute;
-    bottom: 6%;
-   } 
+    .info {
+        bottom: 13%;
+        position: absolute;
+    }
 
-   .section2 {
-    margin-top: 30px;
-   }
+    .jobs {
+        flex-direction: column;
+    }
 
-   .box1 {
-    width: 100%;
-   }
+    .box1 {
+        width: 100%;
+    }
 
-   .organish > p {
-    font-size: 14px;
-   }
+    .organish > p {
+        width: 50%;
+    }
 
-   .me {
-    display: none;
-   }
+    .section2 {
+        height:150vh;
+        padding: 10px;
+    }
 
-   .jobs {
-    flex-direction: column;
-   } 
+    .boxes4 {
+        margin-top: 80px;
+        position: relative;
+    }
 
-   .section3 {
-    background-image:none;
-   }
+    .box5 {
+        display: none;
+    }
 
-   .kurs {
-    flex-direction: column;
-   }
+    .box6 {
+        position: absolute;
+        right: 20%;
+    }
 
-   iframe {
-    width: 100%;
-   }
+    .section3 {
+        height: max-content;
+        padding: 13px;
+        background-size: cover;
+        background-position: center;
+    }
 
-   .boxes4 {
-    margin-top: 74px;
-    width: 100%;
-    position: relative;
-   }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
-   .box4 {
-    position: absolute;
-   }
+    .case {
+        width: 100%;
+    }
 
-   .box5 {
-    position: absolute;
-   }
+    .case > img {
+        display: none;
+    }
 
-   .box6 {
-    left: 10%;
-    z-index: 99;
-    position: absolute;
-   }
+    .section4 {
+        height:max-content;
+    }
 
-   .box7 {
-    right: 10%;
-    position: absolute;
-   }
+    .shells {
+        flex-direction: column;
+    }
 
-   .text2 > h1 {
-    font-size: 30px;
-    width: 100%;
-   }
+    .shell {
+        width: 100%;
+        display: flex;
+    }
 
-   .text2 > p {
-    width: 90%;
-   }
+    .shell > p {
+        width: 90%;
+        font-size: 18px;
+    }
 
-   .section2 {
-    height: max-content;
-    padding: 70px 0px;
-   }
+    .section5 {
+        height: max-content;
+    }
 
-   .section3 {
-    background-image: url(img/back2.png);
-    height: max-content;
-    background-size: cover;
-    padding: 20px;
-    background-position: center;
-   }
+    .section5 > img {
+        width: 100%;
+    }
 
-   .main {
-    flex-direction: column;
-   }
- 
-   .case  {
-    width: 100%;
-   }
+    .boxes1 {
+        margin: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.304);
+        border-radius: 20px;
+        padding: 7px;
+    }
 
-   .case > img {
-    display: none;
-   }
+    .box2 {
+        display: none;
+    }
 
-   .section4 {
-    height:max-content;
-   }
+    .section7 {
+        width: 100%;
+    }
 
-   .shells {
-    flex-direction: column;
-   }
+    .right {
+        display: none;
+    }
+    
+    .overall2 {
+        flex-direction: column;
+    }
 
-   .shell {
-    width: 100%;
-   }
+    .left1 {
+        width: 100%;
+    }
 
-   .shell > img {
-    display: none;
-   }
+    .right1 {
+        display: none;
+    }
 
-   .section5 {
-    height: 55vh;
-   }
+    .social > nav > a {
+        display: none;
+    }
 
-   .section5 > img {
-    width: 100%;
-   }
-
-   .section5 > h1 {
-    font-size: 26px;
-   }
-
-   .box2 > img {
-    display: none;
-   }
-
-   .boxes1 {
-    width: 100%;
-   }
-
-   .comments {
-    gap: 30px;
-   }
-
-   .section8 {
-    height: max-content;
-   }
-
-   .right > img {
-    display: none;
-   }
-
-   .right1 > img {
-    display:none;
-   }
-
-   .left1 {
-    padding: 5px 20px ; 
-    width: 100%;
-   }
-
-   .left1 > h1 {
-    font-size: 30px;
-   }
-
-   .dizayner {
-    padding: 20px;
-    width: 100%;
-   }
-
-   footer {
-    width: 100%;
-   }
-
-   footer > nav {
-    margin: 30px;
-   }
-
-   .social > nav > a {
-    font-size: 13px;
-    margin: 20px;
-   }
-
-   .footer2 {
-    padding: 10px;
-   }
-
-   .i > i {
-    display: none;
-   }
-
-   .logo3 {
-    display: none;
-   }
-
-   .kirish {
-    display: none;
-   }
-
-   .section6 {
-    display: none;
-   }
-
+    .overall3 {
+        justify-content: space-around;
+    }
 }
-
