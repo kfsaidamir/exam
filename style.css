@@ -829,7 +829,8 @@ footer {
    }
 
    .section2 {
-    height: 100vh;
+    height: max-content;
+    padding: 70px 0px;
    }
 
    .section3 {
