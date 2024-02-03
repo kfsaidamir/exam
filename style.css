@@ -706,7 +706,7 @@ footer {
 @media (max-width:420px) {
     header {
         width: 100%;
-        padding: 10px 1px;
+        padding: 2px 1px;
     }
 
     header > nav > a {
@@ -715,10 +715,6 @@ footer {
 
     nav > a > span {
         display: none;
-    }
-
-    .logo {
-        margin: 0 auto;
     }
 
     .logo > p {
@@ -831,5 +827,129 @@ footer {
    .text2 > p {
     width: 90%;
    }
+
+   .section2 {
+    height: 205vh;
+   }
+
+   .section3 {
+    background-image: url(img/back2.png);
+    height: max-content;
+    background-size: cover;
+    padding: 20px;
+    background-position: center;
+   }
+
+   .main {
+    flex-direction: column;
+   }
+ 
+   .case  {
+    width: 100%;
+   }
+
+   .case > img {
+    display: none;
+   }
+
+   .section4 {
+    height:max-content;
+   }
+
+   .shells {
+    flex-direction: column;
+   }
+
+   .shell {
+    width: 100%;
+   }
+
+   .shell > img {
+    display: none;
+   }
+
+   .section5 {
+    height: 55vh;
+   }
+
+   .section5 > img {
+    width: 100%;
+   }
+
+   .section5 > h1 {
+    font-size: 26px;
+   }
+
+   .box2 > img {
+    display: none;
+   }
+
+   .boxes1 {
+    width: 100%;
+   }
+
+   .comments {
+    gap: 30px;
+   }
+
+   .section8 {
+    height: max-content;
+   }
+
+   .right > img {
+    display: none;
+   }
+
+   .right1 > img {
+    display:none;
+   }
+
+   .left1 {
+    padding: 5px 20px ; 
+    width: 100%;
+   }
+
+   .left1 > h1 {
+    font-size: 30px;
+   }
+
+   .dizayner {
+    padding: 20px;
+    width: 100%;
+   }
+
+   footer {
+    width: 100%;
+   }
+
+   footer > nav {
+    margin: 30px;
+   }
+
+   .social > nav > a {
+    font-size: 13px;
+    margin: 20px;
+   }
+
+   .footer2 {
+    padding: 10px;
+   }
+
+   .i > i {
+    display: none;
+   }
+
+   .logo3 {
+    display: none;
+   }
+
+   .kirish {
+    display: none;
+   }
+
+   .section6 {
+    display: none;
+   }
+
 }
 
